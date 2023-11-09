@@ -46,6 +46,13 @@ captive_portal:
 esp32_improv:
   authorizer: none
 
+####
+# WEB SEVER
+# Enables the built-in web server for viewing the device state, internals and controls via web browser
+# on the same local network as the device.
+web_server:
+  include_internal: true
+
 # Sets up the improv via serial client for Wi-Fi provisioning.
 # Handy if your device has a usb port for the user to add credentials when they first get it.
 # improv_serial: # Commented until improv works with usb-jtag on idf
